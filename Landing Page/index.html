@@ -1,0 +1,361 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Load Styles -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <div class="logo">PinkPink<span>.</span></div>
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+        <ul id="navbar__list"></ul>
+        
+
+      </nav>
+    </header>
+    <main>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <div id="module">
+        <div class="landing__container1">
+          <picture>
+            <source
+              media="(min-width: 1366px)"
+              srcset="images/BDspacejoy-85pCvDWDMmI-unsplash.png"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/SDspacejoy-85pCvDWDMmI-unsplash.png"
+            />
+            <img
+              src="images/Mspacejoy-85pCvDWDMmI-unsplash.png"
+              alt="Living room"
+              style="width: auto"
+            />
+          </picture>
+          <article class="about">
+            <div class="about-text">
+              <p class="heading">QUALITY DESIGN FOR ALL</p>
+              <p class="title">
+                we create spaces, build dreams and shape environments<span>.</span>
+              </p>
+              <p class="description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <p class="ending">EXPLORE OUR PRODUCTS</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+        <div class="infograрhics">
+
+          <div class="best-quality">
+            <div class="icon-wrapper">
+            <span class="icon heart"></span>
+            <div class="icon-text">
+            <h1>Best quality</h1>
+            <p>
+              Good design begins with expressing a unique and exceptional story.
+            </p>
+          </div>
+          </div>
+          </div>
+          <div class="rich-understanding">
+            <div class="icon-wrapper">
+            <span class="icon zipp"></span>
+            <div class="icon-text">
+            <h1>Rich understanding</h1>
+            <p>
+              Our designers possess a rich understanding of all aspects of a
+              project.
+            </p>
+            </div>
+          </div>
+          </div>
+          <div class="great-support">
+            <div class="icon-wrapper">
+            <span class="icon headphones"></span>
+            <div class="icon-text">
+            <h1>Great support</h1>
+            <p>
+              Our forward thinking design teams are leading successful projects
+              worldwide.
+            </p>
+            </div>
+          </div>
+          </div>
+        </div>
+     
+
+       
+
+      <section id="Showcase" data-nav="Section 1">
+        <div class="landing__container2">
+          <h2>Explore our exclusive design<span>.</span></h2>
+          
+          <div class="pictures">
+          <picture class="picture1">
+            <source
+              media="(min-width: 1366px)"
+              srcset="images/BDspacejoy-aAPuOQxS8yE-unsplash.png"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/SDspacejoy-aAPuOQxS8yE-unsplash.png"
+            />
+            <img
+              src="images/Mspacejoy-ucCsSBzYBQQ-unsplash.png"
+              alt="Showcase"
+              style="width: auto"
+            />
+          </picture>
+          <picture class="picture2">
+            <source
+              media="(min-width: 1366px)"
+              srcset="images/BDspacejoy-GKTal6gI4P0-unsplash.png"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/SDspacejoy-GKTal6gI4P0-unsplash.png"
+            />
+            <img
+              src="images/Mspacejoy-ucCsSBzYBQQ-unsplash.png"
+              alt="Showcase"
+              style="width: auto"
+            />
+          </picture>
+          <picture class="picture3">
+            <source
+              media="(min-width: 1366px)"
+              srcset="images/BDspacejoy-ucCsSBzYBQQ-unsplash.png"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/SDspacejoy-ucCsSBzYBQQ-unsplash.png"
+            />
+            <img
+              src="images/Mspacejoy-ucCsSBzYBQQ-unsplash.png"
+              alt="Showcase"
+              style="width: auto"
+            />
+          </picture>
+        </div>
+
+          <div class="btn">
+            <h1>Mopond</h1>
+            <p>PHOENIX, ARIZONA
+            <div class="arrow-1">
+              <div></div>
+            </div>
+          </p>
+          </div>
+          
+          <div class="icon">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </section>
+      <section id="How we do it" data-nav="Section 2">
+        <div class="landing__container3">
+          <h2>This is how we do it<span>.</span></h2>
+          <div class="container3-wrapper1">
+            <div class="left-wrapper">
+             <div class="container3-number">01.</div>
+             <div class="container3-title">Discuss the concept with us<span>.</span></div>
+            </div>
+            <div class="right-wrapper">
+              <div class="container3-text">Do you need a talented design eye to cast vision and look for one-of-a-kind opportunities in your home? This is a robust consultation-conversation package.</div>
+              <div class="container3-learnmore">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="pink-line"></div>
+
+
+          <div class="container3-wrapper2">
+            <div class="left-wrapper">
+             <div class="container3-number">02.</div>
+             <div class="container3-title">Confirm the provided design<span>.</span></div>
+            </div>
+            <div class="right-wrapper">
+              <div class="container3-text">We will send you a proposal and service agreement for your review. Then we will get down to the exciting stuff and communicate concepts visually.</div>
+              <div class="container3-learnmore">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="pink-line"></div>
+
+          <div class="container3-wrapper3">
+            <div class="left-wrapper">
+             <div class="container3-number">03.</div>
+             <div class="container3-title-3">We fully design and accessorize your home<span>.</span></div>
+            </div>
+            <div class="right-wrapper">
+              <div class="container3-text">Specializing in whole-home transformations, we design with intention to deliver interiors with a depth of character and emotion, and a breadth of function and practicality.</div>
+              <div class="container3-learnmore">LEARN MORE</div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="Our projects" data-nav="Section 3">
+        <div class="landing__container4">
+
+          <picture>
+            <source
+              media="(min-width: 1366px)"
+              srcset="images/BDjimmy-dean-Qngdf0kgGB4-unsplash1.png"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="images/SDjimmy-dean-Qngdf0kgGB4-unsplash1.png"
+            />
+            <img
+              src="images/Mjimmy-dean-Qngdf0kgGB4-unsplash.png"
+              alt="Family photo"
+              style="width: auto"
+            />
+          </picture>
+
+          <div class="container4-wrapper">
+
+          <h2>Spend your happy time with full comfort<span>.</span></h2>
+          <div class="container4-text">As we develop each project's unique expression, we are transforming context and heritage into compelling stories and unparalleled experiences.</div>
+          <div class="container4-explore">EXPLORE OUR PROJECTS</div>
+
+          </div>
+
+      </section>
+
+      <section id="Testimonials" data-nav="Section 4">
+
+        <div class="landing__container5">
+
+          <div class="quote">
+            <p class="quote-text">“I absolutely love my new home and cannot thank you enough for all of your time and expertise”</p>
+            <p class="quote-author">Jenny Wilson</p>
+            <p class="quote-place">St. Celina, Delaware</p>
+          </div>
+
+          <div class="video-container">
+
+       
+            <picture class="girl">
+              <source
+                media="(min-width: 1366px)"
+                srcset="images/BDkinga-cichewicz-DDBO05yBbuk-unsplash1.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="images/SDkinga-cichewicz-DDBO05yBbuk-unsplash1.png"
+              />
+              <img
+                src="images/Mkinga-cichewicz-DDBO05yBbuk-unsplash 1.png"
+                alt="Girl"
+                style="width: auto"
+              />
+            </picture>
+
+          
+          <img src="images/play.png" alt="play" class="play-button">
+
+        </div>
+
+      </section>
+
+      <section id="Subscribe" data-nav="Section 5">
+
+        <div class="landing__container6">
+
+          <h2>Subscribe to our newsletter to get updated<span>.</span></h2>
+          <p>Get our latest update on your inbox. With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+
+        </div>
+
+          <form class="subscribe-form " method="get" >
+            <div class="container6-wrapper">
+             <div class="container6-wrapper-left">
+               <p>Your first name</p><input required placeholder="Write your first name here" type="text">
+               <p>Your Surname</p><input placeholder="Write your surname here" type="text">
+               <p>Email Address</p><input required placeholder="Write your email address here" type="email">
+               <p>Phone number</p><input placeholder="Write your phone number here" type="tel">
+             </div>
+             <div class="container6-wrapper-right">
+               <p>Subject</p><input placeholder="Write a subject line" type="text">
+               <p>Message</p>
+               <textarea required rows="4" placeholder="Add a brief of your project"></textarea>
+               <p><input type="submit" class="button" value="Subscribe"></p>
+              </div>
+           </div>
+          </form>
+          <div class="spam">
+        <img src="images/lock 1.png" alt="Lock"><span>We don't spam at all, our promise!</span>
+      </div>
+
+      </section>
+
+      <footer id="footer">
+
+        <div class="landing__container7">
+
+          <div class="container7-wrapper1">
+            <p class="heading">PinkPink<span>.</span></p>
+            <p class="grey-text1">We make furniture with love and passions. No doubt, really.</p>
+          </div>
+          <div class="container7-wrapper2">
+            <p class="rose-text">CONTACT</p>
+            <p class="grey-text">62 Orp St, Seattle, USA</p>
+            <p class="grey-text">sales@furnatur.com</p>
+            <p class="grey-text">+1 800 726 915273</p>
+          </div>
+          <div class="container7-wrapper3">
+            <p class="rose-text">PRODUCT</p>
+            <p class="grey-text">Living Room</p>
+            <p class="grey-text">Bed Room</p>
+            <p class="grey-text">Office Room</p>
+          </div>
+          <div class="container7-wrapper4">
+            <p class="rose-text">OUR COMPANY</p>
+            <p class="grey-text">About us</p>
+            <p class="grey-text">Services</p>
+            <p class="grey-text2">Products</p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </footer>
+
+
+    </main>
+    <footer class="page__footer">
+      <p>&copy Ididit!</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

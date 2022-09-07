@@ -1,0 +1,22 @@
+@import "../css/mobile.css" screen and (max-width: 1023px);
+
+@import "../css/SD.css" screen and (min-width: 1024px);
+
+@import "../css/BD.css" screen and (min-width: 1366px);
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+:root {
+  --text: rgba(16, 42, 66, 1); /* #102a42 */
+  --pink: rgba(235, 82, 150, 1); /* #eb5296 */
+  --subtext: rgba(29, 38, 58, 1); /* #1d263a */
+  --blood: rgba(109, 4, 48, 1); /* #6d0430 */
+}
+
+body {
+  position: absolute;
+  background: #fafbfb;
+
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--text);
+}

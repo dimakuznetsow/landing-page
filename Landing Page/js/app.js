@@ -1,27 +1,4 @@
-/**
- *
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- *
- * Dependencies: None
- *
- * JS Version: ES2015/ES6
- *
- * JS Standard: ESlint
- *
- */
-
-/**
- * Comments should be present at the beginning of each procedure and class.
- * Great to have comments before crucial code sections within the procedure.
- */
-
-/**
- * Define Global Variables
- *
- */
+// Global Variables
 
 const sections = document.querySelectorAll("section");
 const menu = document.querySelector("#navbar__list");
@@ -32,19 +9,7 @@ const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 const logo = document.querySelector(".logo");
 
-/**
- * End Global Variables
- * Start Helper Functions
- *
- */
-
-/**
- * End Helper Functions
- * Begin Main Functions
- *
- */
-
-// build the nav
+// dynamically added li  with a tag in header
 
 for (let i = 0; i < sections.length; i++) {
   addLi(menu, sections[i].id, sections[i]);
@@ -66,7 +31,7 @@ function addLi(ul, text, section) {
   menu.appendChild(li);
 }
 
-// Add class 'active' to section when near top of viewport
+// mobile menu open and close function, which adds/removes class to apply style
 
 function openMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -81,6 +46,8 @@ function openMenu() {
 }
 
 hamburger.addEventListener("click", openMenu);
+
+// indication for header's sections added while scrolling thru the sreen based on the viewport
 
 window.addEventListener("scroll", (e) => {
   e.preventDefault();
@@ -100,26 +67,18 @@ window.addEventListener("scroll", (e) => {
   });
 });
 
+// return to the top of the landing page when pressed on logo icon
+
 logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-document.querySelectorAll(".menuItem").forEach((e) =>
+// delete class that shows hamburger-menu when section is selected
+
+menuItems.forEach((e) =>
   e.addEventListener("click", () => {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   })
 );
-
-/**
- * End Main Functions
- * Begin Events
- *
- */
-
-// Build menu
-
-// Scroll to section on link click
-
-// Set sections as active

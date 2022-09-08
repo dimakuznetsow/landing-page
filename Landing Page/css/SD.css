@@ -53,7 +53,7 @@ a:active {
   text-decoration: none;
 }
 
-.active-li {
+.your-active-section {
   border: none;
   border-bottom: 5px dotted var(--pink);
 }

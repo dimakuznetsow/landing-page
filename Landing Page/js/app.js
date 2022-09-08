@@ -104,6 +104,14 @@ logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
+document.querySelectorAll(".menuItem").forEach((e) =>
+  e.addEventListener("click", () => {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  })
+);
+
 /**
  * End Main Functions
  * Begin Events

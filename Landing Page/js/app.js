@@ -58,13 +58,11 @@ window.addEventListener("scroll", (e) => {
     const topDistance = section.getBoundingClientRect().top;
 
     if (topDistance > -500 && topDistance < 142) {
-      document
-        .querySelectorAll("nav a")
-        [i].classList.add("your-active-section");
+      document.querySelectorAll("nav a")[i].classList.add("your-active-class");
     } else {
       document
         .querySelectorAll("nav a")
-        [i].classList.remove("your-active-section");
+        [i].classList.remove("your-active-class");
     }
   });
 });

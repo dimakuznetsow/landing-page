@@ -58,6 +58,10 @@ a:active {
   border-bottom: 5px dotted var(--pink);
 }
 
+.your-active-section {
+  background-color: #fff;
+}
+
 .hamburger {
   display: none;
 }

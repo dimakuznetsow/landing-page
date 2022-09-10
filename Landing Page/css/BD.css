@@ -41,6 +41,10 @@ section {
   border-bottom: 5px dotted var(--pink);
 }
 
+.your-active-section {
+  background-color: #fff;
+}
+
 .logo {
   font-style: normal;
   font-weight: 900;

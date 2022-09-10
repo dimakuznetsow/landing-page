@@ -58,8 +58,11 @@ window.addEventListener("scroll", (e) => {
     const topDistance = section.getBoundingClientRect().top;
 
     if (topDistance > -500 && topDistance < 142) {
+      section.classList.add("your-active-section");
+
       document.querySelectorAll("nav a")[i].classList.add("your-active-class");
     } else {
+      section.classList.remove("your-active-section");
       document
         .querySelectorAll("nav a")
         [i].classList.remove("your-active-class");
@@ -78,6 +81,7 @@ logo.addEventListener("click", function () {
 menuItems.forEach((e) =>
   e.addEventListener("click", () => {
     menu.classList.remove("showMenu");
+
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   })

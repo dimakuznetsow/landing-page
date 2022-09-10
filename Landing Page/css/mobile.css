@@ -13,6 +13,15 @@ header {
     "list . .";
 }
 
+.your-active-class {
+  border: none;
+  border-bottom: 5px dotted var(--pink);
+}
+
+.your-active-section {
+  background-color: #fff;
+}
+
 section {
   padding-top: 82px;
 }

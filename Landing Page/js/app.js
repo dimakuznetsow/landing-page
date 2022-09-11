@@ -8,6 +8,7 @@ const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 const logo = document.querySelector(".logo");
+const form = document.querySelector("form");
 
 // dynamically added li  with a tag in header
 
@@ -86,3 +87,10 @@ menuItems.forEach((e) =>
     menuIcon.style.display = "block";
   })
 );
+
+// alert window when form submitted
+
+form.addEventListener("submit", (e) => {
+  // e.preventDefault();
+  alert("Thanks! Your response was submitted");
+});

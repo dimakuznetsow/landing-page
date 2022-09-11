@@ -1,13 +1,15 @@
-# Landing Page Project
+## **Landing Page Project**
 
-## Table of Contents
+---
 
-* [Instructions](#instructions)
+Here is a multi-section landing page. Build after Figma template.
 
-## Instructions
+Navigation bar is build dynamically based on the sections of the page.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The major point is indication. While navigating through the page, the section that is active in the viewport/closest to the top is distinguished from the other sections.
 
-To get started, open `js/app.js` and start building out the app's functionality
+Landing Page is responsive in 3 breakpoints:
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+- 330px for mobile
+- 1024px for small desktop
+- 1366 for big desktop
